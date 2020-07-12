@@ -26,3 +26,14 @@ https://media0.giphy.com/media/126NMCvhKJfNN6/200_d.gif?cid=00ff238c6ef47c606332
 This is the solution Giphy shows
 var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
 xhr.done(function(data) { console.log("success got data", data); });
+
+$('#submit').click(()=>{
+                let userInput = $('#search').val()
+                //alert('userInput')
+                $.ajax({
+                url:'http://api.giphy.com/v1/gifs/search?q=' + {userInput} + '&api_key=RpB7riiXhTfwsvrmz6bH959b3JNBb3mf'
+            });
+               
+                });
+            
+            });
