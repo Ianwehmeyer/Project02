@@ -50,8 +50,14 @@
 
            //Need button to make search work - as a user I'd like to type in text, click submit, view movies on page
 
-            $.ajax({
+           //from technical standpoint I need to be able to use the user input for an 'API call' and parse the response so it displays data
+            $('#submit').click(()=>{
+                let userInput = $('#search').val()
+                alert('userInput')
+                $.ajax({
                 url:"http://api.giphy.com/v1/gifs/search?q=(searchcriterea)&"
+            });
+            
             })
 
 });
@@ -64,12 +70,12 @@
 </body>
 </html>
 
-<!-- $(function () {
-            alert('Hello, world!')
-        }); -->
-        <!--$(function () {
-            $('#h1-id').text('Hello, jQuery');
-        });-->
+<!-- //$(function () {
+            //alert('Hello, world!')
+        //}); -->
+       // <!--$(function () {
+            //$('#h1-id').text('Hello, jQuery');
+        //});-->
 
         <!--//find elements based on attribute starts with
     //$('[class^="col"').text('Found by starts with')
