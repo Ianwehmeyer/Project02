@@ -23,9 +23,14 @@
 </head>
 <body>
     <!--Should operate as my main search selector-->
-    <div>
-        <input id="search" type="search" placeholder="Search for Gifs"  />
+    <div id="parent">
+        
         <button id="submit" class="button type="button" name="" class="btn btn-primary" btn-lg btn-block>Submit</button>
+        <div id="output"></div>
+        <form us="myForm">
+            <input id="search" type="text" placeholder="Search for Gifs"/>
+            <input type="hidden" name="RpB7riiXhTfwsvrmz6bH959b3JNBb3mf" value=""/>
+        </form>
     </div>
 
     
@@ -35,11 +40,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <!--customer script that uses jQuery below CDN reference-->
     <script>
-        $(function () {
+        $(document).ready( function () {
+            console.log("document ready...");
+            $('#submit').click( function () {
+                console.log('go clicked...');
+                var url = "http://api.giphy.com/v1/gifs/search?q=turkey&api_key=RpB7riiXhTfwsvrmz6bH959b3JNBb3mf ";
+                var data = "";
+                console.log( data);
+            });
             
 
 });
-    
+
     
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
