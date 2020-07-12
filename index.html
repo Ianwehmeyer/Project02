@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>Page Title</title>
+<style> 
+    body {
+    font-size: 32px;
+}
+    div {
+        margin-top: .1em;
+    }
+    .parent {
+        margin-left: .8em;
+    }
+    .child {
+        margin-left: 1.6em;
+    }
+</style>
+</head>
+<body>
+    <!--Should operate as my main search selector-->
+    <div>
+        <input id="search" type="search" placeholder="Search for Gifs"  />
+        <button id="submit" class="<button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block>Submit</button>
+    </div>
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <!--customer script that uses jQuery below CDN reference-->
+    <script>
+        $(function () {
+            //will execute when the page is ready
+
+            //will locate all direct children
+
+            //first locator will give me the element with an id of target
+            //second locator (method) will get me all directy children
+            //attr method will update an attribute
+            //$('#targe').children().attr('style','color:red');
+            //$('#target').find(*).attr('style','color:red');
+            //find always wants a selector - (*) selects all in find
+            
+            //use id for selector (might be easiest way for me to figure some of this out)
+            //$('#demo').parent().attr('style','color:red');
+
+            //$('#demo').parents().attr('style', 'color: red');
+});
+    
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- $(function () {
+            alert('Hello, world!')
+        }); -->
+        <!--$(function () {
+            $('#h1-id').text('Hello, jQuery');
+        });-->
+
+        <!--//find elements based on attribute starts with
+    //$('[class^="col"').text('Found by starts with')
+    
+    //find elements based on attribute contains
+    //$('[class*="md"').text('found by contains');
+        //$('nav > a') parent child
+    //$('nav a')
