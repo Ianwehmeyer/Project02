@@ -21,11 +21,20 @@ input {
     width: 100%;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 320px) {
     /* For mobile phones: */
-    [class*="col-"] {
+    [class*="col-sml"] {
       width: 100%;
     }
   }
+
+.container {
+  color: #7FFFD4;
+}
   
-  
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
