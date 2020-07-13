@@ -1,4 +1,4 @@
-# Project02
+# Project02 Ian Wehmeyer
 Project 02 - making API search work
 
 This is my project. I'm planning on building an API search engine with giphy. 
