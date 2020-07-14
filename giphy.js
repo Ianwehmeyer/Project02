@@ -48,11 +48,11 @@ $(document).ready(function(){
                     $.each(data.data, function(key, obj){
                         //console.log('inside each')
                         var url = obj.images.original.url;
-                        var img = "<img src='"+url+"'/>";
+                        var img = "<img src='"+url+"'/>\n";
                         
                         output+=img
                     });
-                    console.log(output + '\n');
+                    console.log(output);
                     $('#outputarea').html(output)   
                 },
                 error: function(){
